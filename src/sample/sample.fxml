@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="50.0" prefHeight="50.0" />
+      <RowConstraints minHeight="200.0" prefHeight="200.0" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+      <ColumnConstraints minWidth="100.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <TextField fx:id="chatText" onKeyReleased="#onKeyReleased" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextArea fx:id="chatHistoryText" minHeight="200" minWidth="200" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="nameText" GridPane.columnIndex="1" />
+      <Label alignment="CENTER_RIGHT" text="Name:" GridPane.halignment="RIGHT" />
+      <Label text="History:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+      <Label text="TextBox:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
